@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="image">
+            <div id="logo">
+                <img src="./canva-white-red-simple-flat-fitness-gym-logo-Fm7VAyJzv0o-removebg-preview.png" alt=""
+                    srcset="" id="king" height="145px" width="170px">
+            </div>
+            <div id="toggleButton"><img src="./menu (2).png" alt="" id="ico"></i></div>
+
+            <nav id="list">
+                
+                <ul>
+                    <li><a href="" class="home-link">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li class="nav"><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><div id="closeButton"><i class="fa-solid fa-xmark fa-2xl" style="color: #ff0000;"></i></div></li>
+                </ul>
+
+                </button>
+                <div class="jk">
+                    <button class="glow-button">Click Me</button>
+                </div>
+            </div>
+        </nav>
+<div class="meent"></div>
+        <div class="main">
+            <h1 class="heading">HI THIS IS BORCELLE</h1>
+            <h2 class="head">GYM TRAINER</h2>
+            <button class="premium-btn">
+                MY COURSES
+                <div class="glow-effect"></div>
+        </div>
+
+       
+
+    </div>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var ul = document.querySelector('#list ul');
+            ul.classList.toggle('active');
+        });
+
+        document.getElementById('closeButton').addEventListener('click', function() {
+            var ul = document.querySelector('#list ul');
+            ul.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>
