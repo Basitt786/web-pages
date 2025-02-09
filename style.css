@@ -135,6 +135,12 @@ body {
   animation: glow 2s infinite;
 }
 
+#king {
+  width: 140px;
+  height: auto;
+  margin-left: 5px;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -192,6 +198,7 @@ body {
     transform: scale(1.2);
     opacity: 1;
   }
+  
 
   100% {
     transform: scale(0.8);
