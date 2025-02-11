@@ -32,7 +32,7 @@
                     <li><a href="#">CONTACT</a></li>
                     <!-- <li><div id="closeButton"><i class="fa-solid fa-xmark fa-2xl" style="color: #ff0000;"></i></div></li> -->
                     <button class="red-attractive-button">CONTACT ME</button>
-                    
+
 
                 </ul>
             </nav>
@@ -49,82 +49,81 @@
 
 
     <div id="container-3">
-        <div id="one">   <h3 class="mutt">BODY BUILDING</h3>
-       </div>
-       
+        <div id="one">
+            <h3 class="mutt">BODY BUILDING</h3>
+        </div>
+
         <div id="two">
             <h3 class="mutt">MUSCLE GAIN</h3>
-        
+
         </div>
-        
+
         <div id="three">
             <h3 class="mutt">WEIGHT LOSS</h3>
-            
+
         </div>
     </div>
 
-
-    <div id="men">
-
-        <div id="mono"></div>
-        <div id="mono-1">
-            <div id="chang">
-                <h3 class="abot">ABOUT ME</h3>
-                <p id="para-2">You’ll look at graphs and charts in Task One, how to approach the task and the language
-                    needed for a successful answer. You’ll examine Task Two questions and learn how to plan, write and
-                    check
-                    academic essays.</p>
-
-                <p id="para-3">Task One, how to approach the task and the language needed for a successful answer.
-                    You’ll examine Task
-                    Two questions and learn how to plan, write and check academic essays.</p>
-
-                <button class="new-2025-button pulse">Explore Now</button>
+    <div id="long">
+        <div id="men">
+            <div id="mono"></div>
+            <div id="mono-1">
+                <div id="chang">
+                    <h3 class="abot">ABOUT ME</h3>
+                    <p id="para-2">You’ll look at graphs and charts in Task One, how to approach the task and the
+                        language
+                        needed for a successful answer. You’ll examine Task Two questions and learn how to plan, write
+                        and
+                        check
+                        academic essays.</p>
+                    <button class="new-2025-button pulse">Explore Now</button>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div id="container-00">
+        <div id="section">
+            <div id="box"></div>
+            <div id="box-1">
+                <div id="content">
+                    <h3 class="info">MY LONG TERM</h3>
+                    <p id="text-1">You’ll look at graphs and charts in Task One, how to approach the task and the
+                        language
+                        needed for a successful answer. You’ll examine Task Two questions and learn how to plan, write
+                        and
+                        check academic essays.</p>
+
+                    <button class="cta-button animate">Explore Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="heading-1">
         <h2 class="fault">FROM BLOG</h2>
     </div>
 
-    <div id="fish">
-        <div id="mango"> </div>
 
-        <div id="mango-1"></div>
-        <!-- <div><h3 id="toot">Gym & Fitness</h3>
-            <p id="tot">YOUR ANTIBIOTIC ONE DAY TO 20 DAYS OPTIONS</p></div> -->
+    <div class="video-container">
+        <video id="myVideo" src="./2025457-hd_1280_720_30fps.mp4"
+            poster="./WWE 2K23 John Cena 4k - Free 4k Wallpapers - 40_000+ Free 4k Wallpapers - Pixel4k.jpg"></video>
+        <div class="controls">
+            <button onclick="playPause()">▶️ Play/Pause</button>
+            <button onclick="muteUnmute()">🔊 Mute/Unmute</button>
+        </div>
     </div>
 
-    <div id="gym">
-        <h3 id="toot">Gym & Fitness</h3>
-        <p id="tot">YOUR ANTIBIOTIC ONE DAY TO 10 DAYS OPTIONS</p>
+
     </div>
-
-    <div id="gym-2">
-        <h3 id="toot-1">Gym & Fitness</h3>
-        <p id="tot-1">YOUR ANTIBIOTIC ONE DAY TO 10 DAYS OPTIONS</p>
-    </div>
-
- 
-
-<div class="video-container">
-    <video id="myVideo" src="./2025457-hd_1280_720_30fps.mp4" poster="./WWE 2K23 John Cena 4k - Free 4k Wallpapers - 40_000+ Free 4k Wallpapers - Pixel4k.jpg"></video>
-    <div class="controls">
-        <button onclick="playPause()">▶️ Play/Pause</button>
-        <button onclick="muteUnmute()">🔊 Mute/Unmute</button>
-    </div>
-</div>
-
-
-
-</div>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h2>About Us</h2>
                 <p>
-                    We are a creative team dedicated to BORCELLE Fitness GYM  and digital experiences.
+                    We are a creative team dedicated to BORCELLE Fitness GYM and digital experiences.
                 </p>
             </div>
             <div class="footer-section links">
@@ -156,12 +155,7 @@
     </footer>
 
 
-
-<script>window.addEventListener("resize", () => {
-    document.body.style.width = "100%"; 
-  });
-  
-
+    <script>
         const video = document.getElementById("myVideo");
         function playPause() {
             if (video.paused) {
@@ -174,13 +168,18 @@
             video.muted = !video.muted;
         }
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById("menu-icon");
+            const mobileNav = document.getElementById("mobile-nav");
+            const mainNav = document.querySelector(".container");
 
+            menuIcon.addEventListener("click", function () {
+                mobileNav.classList.toggle("active");
+                mainNav.classList.toggle("show-menu");
+            });
+        });
 
-        
     </script>
-
-
-
 </body>
 
 </html>
